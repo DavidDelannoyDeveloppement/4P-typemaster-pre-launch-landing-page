@@ -1,0 +1,26 @@
+@mixin flex-Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin flex-Center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin button {
+    @include flex-Center;
+    width: 175px;
+    height: 58px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 8px;
+}

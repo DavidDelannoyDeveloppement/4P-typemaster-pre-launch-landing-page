@@ -1,0 +1,564 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $barlow;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*Container Desktop*/
+.container {
+    @include flex-Center-column;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*Header Desktop*/
+.container__header {
+    @include flex-Center;
+    justify-content: space-between;
+    width: 77%;
+    max-width: 1110px;
+    margin-top: 55px;
+
+    
+    .button {
+        @include button;
+        background-color: $gris3;
+        color: $gris1;
+    }
+    .button:hover {
+        background-color: $gris1;
+        color: white;
+    }
+}
+
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*Presentation-Section Desktop*/
+.container__presentation {
+    @include flex-Center-column;
+    width: 100%;
+    margin-top: 83px; //distance entre le header et la section présentation
+
+
+    /*Presentation-Top*/
+    .presentation__top {
+    display: flex;
+    width: 77%;
+    max-width: 1110px;
+
+        .typemaster-box {
+            @include flex-Center-column;
+            align-items: flex-start;
+            width: 445px;
+
+            h1 {
+                width: 445px;
+                color: $gris1;
+                font-size: 56px;
+                font-weight: 900;
+                line-height: 56px;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin-top: 24px;
+                color: $gris2;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+            }
+
+            .button-h5-box {
+                display: flex;
+                margin-top: 40px;
+            }
+
+            .button {
+                @include button;
+                background-color: $orange1;
+                color: white;
+            }
+            .button:hover {
+                background-color: $orange2;
+            }
+
+            h5 {
+                @include flex-Center;
+                margin-left: 40px;
+                color: $gris2;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+                text-transform: uppercase;
+            }
+        }
+
+        .image-keyboard {
+            width: 540px;
+            border-radius: 20px;
+            background: #D8D8D8;
+            margin-left: 125px;   
+        }
+
+        .image-pattern-1 {
+            width: 255px;
+            height: 240px;
+            margin-left: 30px;
+        }
+    }
+
+
+
+
+    /*Presentation-Bottom*/
+    .presentation__bottom {
+        display: flex;
+        width: 77%;
+        max-width: 1110px;
+        margin-top: 30.5px;
+
+        .image-pattern-2 {
+            width: 255px;
+            height: 240px;
+            margin-right: 30px;
+            margin-left: -285px
+        }
+
+        .cadre-image-phone {
+            background-color: #e66217;
+            border-radius: 20px;
+
+        }
+        .image-phone {
+            width: 255px;
+            mix-blend-mode: multiply;
+            opacity: 0.75;
+            border-radius: 20px;
+
+        }
+
+        .image-glass {
+            width: 445px;
+            margin-left: 30.5px;
+            border-radius: 20px;
+        }
+
+        .mechanical-box {
+            @include flex-Center-column;
+            align-items: flex-start;
+            width: 255px;
+            margin-left: 124.5px;
+
+            h2 {
+                width: 255px;
+                color: $gris1;
+                font-size: 32px;
+                font-weight: 900;
+                line-height: 36px;
+                text-transform: uppercase;
+            }
+
+            p {
+                width: 256px;
+                margin-top: 27px;
+                color: $gris2;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+            }
+        }
+    } 
+}
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*Features-Section Desktop*/
+.container__features {
+    @include flex-Center;
+    justify-content: space-between;
+    width: 77%;
+    max-width: 1110px;
+    margin-top: 168px;
+
+
+    .features-part {
+        @include flex-Center-column;
+        align-items: flex-start;
+        width: 255px;
+
+
+        .cadre {
+            @include flex-Center;
+            background-color: $orange1;
+            width: 65px;
+            height: 65px;
+            border-radius: 15px;
+
+            img {
+                width: 28px;
+            }
+        }
+
+        h3 {
+            width: 255px;
+            margin-top: 48px;
+            color: $gris1;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 28px;
+            text-transform: uppercase;
+        }
+
+        p {
+            width: 255px;
+            margin-top: 24px;
+            color: $gris2;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+    }
+}
+
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*Footer-Section Desktop*/
+.container__credits {
+    @include flex-Center;
+    width: 272px;
+    margin-top: 128px;
+
+    h4 {
+        color: $gris2;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+
+    }
+
+    span {
+        font-weight: 500;
+    }
+}
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*Footer Desktop*/
+
+.attribution { 
+    color: $gris2;
+    font-size: 14px; 
+    text-align: center;
+    a {
+        text-decoration: none; 
+        color: $gris2;
+        font-weight: 700;
+    }
+    .ddd {
+        font-size: 16px; 
+        color: $color-ddd;
+        font-weight: 500;
+        font-family: $font-ddd, $font-Parisienne;
+    }
+}
+
+
+
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§*/
+/*RESPONSIVE DESIGN TABLET*/
+@media only screen and (max-width: 800px) {
+    
+
+    /*§§§§§§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§§§§§§*/
+    /*Container Tablet*/
+    .container {
+        @include flex-Center-column;
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
+
+
+    /*§§§§§§§§§§§§§§§§§§§§§*/
+    /*§§§§§§§§§§§§§§§§§§§§§*/
+    /*Header Tablet*/
+    .container__header {
+        @include flex-Center;
+        justify-content: space-between;
+        width: 77%;
+        max-width: 1110px;
+        margin-top: 55px;
+
+            
+            .button {
+                @include button;
+                background-color: $gris3;
+                color: $gris1;
+            }
+            .button:hover {
+                background-color: $gris1;
+                color: white;
+            }
+        }
+
+
+
+
+        /*§§§§§§§§§§§§§§§§§§§§§*/
+        /*§§§§§§§§§§§§§§§§§§§§§*/
+        /*Presentation-Section Tablet*/
+        .container__presentation {
+            @include flex-Center-column;
+            width: 100%;
+            margin-top: 83px; //distance entre le header et la section présentation
+
+
+            /*Presentation-Top*/
+            .presentation__top {
+            display: flex;
+            width: 77%;
+            max-width: 1110px;
+
+                .typemaster-box {
+                    @include flex-Center-column;
+                    align-items: flex-start;
+                    width: 445px;
+
+                    h1 {
+                        width: 445px;
+                        color: $gris1;
+                        font-size: 56px;
+                        font-weight: 900;
+                        line-height: 56px;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        margin-top: 24px;
+                        color: $gris2;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+
+                    .button-h5-box {
+                        display: flex;
+                        margin-top: 40px;
+                    }
+
+                    .button {
+                        @include button;
+                        background-color: $orange1;
+                        color: white;
+                    }
+                    .button:hover {
+                        background-color: $orange2;
+                    }
+
+                    h5 {
+                        @include flex-Center;
+                        margin-left: 40px;
+                        color: $gris2;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .image-keyboard {
+                    width: 540px;
+                    border-radius: 20px;
+                    background: #D8D8D8;
+                    margin-left: 125px;   
+                }
+
+                .image-pattern-1 {
+                    width: 255px;
+                    height: 240px;
+                    margin-left: 30px;
+                }
+            }
+
+
+
+
+            /*Presentation-Bottom*/
+            .presentation__bottom {
+                display: flex;
+                width: 77%;
+                max-width: 1110px;
+                margin-top: 30.5px;
+
+                .image-pattern-2 {
+                    width: 255px;
+                    height: 240px;
+                    margin-right: 30px;
+                    margin-left: -285px
+                }
+
+                .cadre-image-phone {
+                    background-color: #e66217;
+                    border-radius: 20px;
+
+                }
+                .image-phone {
+                    width: 255px;
+                    mix-blend-mode: multiply;
+                    opacity: 0.75;
+                    border-radius: 20px;
+
+                }
+
+                .image-glass {
+                    width: 445px;
+                    margin-left: 30.5px;
+                    border-radius: 20px;
+                }
+
+                .mechanical-box {
+                    @include flex-Center-column;
+                    align-items: flex-start;
+                    width: 255px;
+                    margin-left: 124.5px;
+
+                    h2 {
+                        width: 255px;
+                        color: $gris1;
+                        font-size: 32px;
+                        font-weight: 900;
+                        line-height: 36px;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        width: 256px;
+                        margin-top: 27px;
+                        color: $gris2;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+                }
+            } 
+        }
+
+
+
+        /*§§§§§§§§§§§§§§§§§§§§§*/
+        /*§§§§§§§§§§§§§§§§§§§§§*/
+        /*Features-Section Tablet*/
+        .container__features {
+            @include flex-Center;
+            justify-content: space-between;
+            width: 77%;
+            max-width: 1110px;
+            margin-top: 168px;
+
+
+            .features-part {
+                @include flex-Center-column;
+                align-items: flex-start;
+                width: 255px;
+
+
+                .cadre {
+                    @include flex-Center;
+                    background-color: $orange1;
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 15px;
+
+                    img {
+                        width: 28px;
+                    }
+                }
+
+                h3 {
+                    width: 255px;
+                    margin-top: 48px;
+                    color: $gris1;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    width: 255px;
+                    margin-top: 24px;
+                    color: $gris2;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26px;
+                }
+            }
+        }
+
+
+
+
+        /*§§§§§§§§§§§§§§§§§§§§§*/
+        /*§§§§§§§§§§§§§§§§§§§§§*/
+        /*Footer-Section Tablet*/
+        .container__credits {
+            @include flex-Center;
+            width: 272px;
+            margin-top: 128px;
+
+            h4 {
+                color: $gris2;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+
+            }
+
+            span {
+                font-weight: 500;
+            }
+        }
+}
